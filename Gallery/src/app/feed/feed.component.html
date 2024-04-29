@@ -1,0 +1,32 @@
+
+
+<div class="row  justify-content-center">
+    
+<button
+class="btn btn-primary col-1 col-lg-auto"
+type="submit" [disabled]="!isPrevEnabled()">
+Prev
+</button> 
+<div class="col-lg-auto col-1"></div>
+<button
+class="btn btn-primary col-1 col-lg-auto  "
+type="submit" [disabled]="!isNextEnabled()">
+Next
+</button> 
+</div>
+
+
+
+<div class="row">
+    <div class="col-xs-12">
+      <ul class="list-group">
+        <li
+          class="list-group-item"
+          *ngFor="let item of currentItemsList">
+          <span>{{ item["name"] }}</span> 
+          <img src='{{ item["imgUrl"]  }}' alt="no img">
+        </li>
+      </ul>
+    </div>
+  </div>
+  

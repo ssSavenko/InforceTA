@@ -1,0 +1,23 @@
+
+<nav class="navbar navbar-light bg-light">
+      
+    <span class="nav  col-2"></span>
+    <div  class="navbar-brand  h1 col-2 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">Gallery</div>
+
+    <ul class="nav   col-1 col-lg-auto   justify-content-center" >
+        <li class="nav-item d-inline  mb-2">
+            <a class="navbar-brand" href="/feed">Feed</a>
+        </li>
+        <li class="nav-item d-inline  mb-2">
+            <a class="navbar-brand" href="/home">MyAlbums</a>
+        </li>
+        <li class="nav-item d-inline  mb-2"  *ngIf="isSetUser == false">
+            <a class="navbar-brand" href="/login">Login</a>
+        </li>
+        <li class="nav-item d-inline  mb-2"  *ngIf="isSetUser == true">
+            <span class="navbar-brand">{{this.usersName}}</span>
+        </li>
+    </ul>  
+    <span class="nav  col-2"></span>
+  </nav>
+   
